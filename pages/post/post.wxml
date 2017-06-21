@@ -1,0 +1,17 @@
+<!--post.wxml-->
+<import src="/pages/template/post/postTemplate.wxml" />
+
+<view>
+    <swiper catchtap="onSwiperTap" class="postSwiperContainer" indicator-dots="true" autoplay="true">
+        <swiper-item><image src="/images/swiper1.jpg" data-postid="1"></image></swiper-item>
+        <swiper-item><image data-postid="0" src="/images/swiper2.jpg"></image></swiper-item>
+        <swiper-item><image data-postid="1" src="/images/swiper3.jpg"></image></swiper-item>
+    </swiper>
+    <block wx:for="{{postContentKey}}" wx:for-item="item">
+        <view catchtap="onPostTap" data-postid="{{item.postId}}">
+            <template is="postTemplate" data="{{...item}}" /> 
+            <!--三个小点将item对象展开平铺，所以在template中引用时不需要用item.xxx的形式-->
+            <!--template只是一个『占位符』，不会被渲染出来-->
+        </view>
+    </block>
+</view>

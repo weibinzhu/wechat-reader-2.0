@@ -1,0 +1,10 @@
+/* movie-detail.wxss */
+.movieDetailContainer{
+    display: flex;
+    flex-direction: column;
+}
+.movieDetailContainer .headImg{
+    width: 100%;
+    height: 300rpx;
+    -webkit-filter: blur(20px);
+}

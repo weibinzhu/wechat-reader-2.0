@@ -1,0 +1,20 @@
+<!--post-detail.wxml-->
+<view class="postDetailContainer">
+  <image class="headImg" src="{{postContentKey.headImg}}"></image>
+  <!--一种图片切换的方法-->
+  <image src="{{isPlayingMusic?'/images/pause.png':'/images/play.png'}}" class="audio" catchtap="onMusicTap"></image>
+  <view class="authorContainer">
+    <image src="{{postContentKey.postAuthorImg}}"></image>
+    <text class="authorName">{{postContentKey.authorName}}</text>
+    <text>发表于</text>
+    <text class="postTime">{{postContentKey.postTime}}</text>
+  </view>
+  <text class="title">{{postContentKey.postTitle}}</text>
+  <view class="tool">
+  <!--另一种图片切换的方法-->
+    <image wx:if="{{collected}}" src="/images/Ribbon.png" catchtap="onCollectionTap"></image>
+    <image wx:else src="/images/RibbonB.png" catchtap="onCollectionTap"></image>
+    <image catchtap="onShareTap" src="/images/Share.png"></image>
+  </view>
+  <text class="detailArtical">{{postContentKey.detailArtical}}</text>
+</view>

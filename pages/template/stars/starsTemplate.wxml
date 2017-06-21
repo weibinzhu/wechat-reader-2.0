@@ -1,0 +1,16 @@
+<template name="starsTemplate">
+  <view class="starsContainer">
+    <!--由于会在多个地方调用，template里的路径要用绝对路径-->
+    <view class="stars">
+      <block wx:for="{{stars}}" wx:for-item="star">
+        <image src="{{star?'/images/star.png':'/images/none-star.png'}}"></image>
+        <!--如果要实现三种星星状态（有，半星，无），则将数组设置为[1,1,1,2,0],然后用wx:if, wx:elif, wx:else嵌套：
+        <image wx:if="{{star==1}}"></image>
+        <image wx:elif="{{star==2}}"></image>
+        <image wx:else></image>
+        -->
+      </block>
+    </view>
+    <text>{{average}}</text>
+  </view>
+</template>

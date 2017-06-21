@@ -1,0 +1,5 @@
+<!--movie-detail.wxml-->
+<view class="movieDetailContainer">
+  <image class="headImg" src="{{movie.movieImg}}" mode="aspectFill" />
+</view>
+<text>开发中...</text>

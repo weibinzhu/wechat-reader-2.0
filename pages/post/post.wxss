@@ -1,0 +1,10 @@
+/* post.wxss */
+@import "/pages/template/post/postTemplate.wxss";
+.postSwiperContainer{
+  height: 500rpx;
+  width: 100%;
+}
+.postSwiperContainer swiper-item image{
+  width: 100%;
+  height: 500rpx;
+}

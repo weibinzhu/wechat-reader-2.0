@@ -1,0 +1,2 @@
+/* more-movie.wxss */
+@import "/pages/template/movieGrid/movieGridTemplate.wxss";

@@ -1,0 +1,10 @@
+@import "/pages/template/movie/movieTemplate.wxss";
+.oneMoiveContainer{
+    float: left;
+    margin: 0 0 40rpx 0;
+}
+.movieGridContainer{
+    margin: 30rpx 0 30rpx 6rpx;
+    height: 1300rpx; 
+    /*用于下滑加载更多，必须设置高度才能触发事件*/
+}
