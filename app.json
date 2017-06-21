@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/post/post",
+        "pages/movie/movie",
+        "pages/welcome/welcome",
+        "pages/post-detail/post-detail",
+        "pages/more-movie/more-movie",
+        "pages/movie-detail/movie-detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "black",
+        "navigationBarBackgroundColor": "#405f80"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/post/post",
+                "text": "文章",
+                "iconPath": "images/article.png",
+                "selectedIconPath": "images/article_c.png"
+            },
+            {
+                "pagePath": "pages/movie/movie",
+                "text": "电影",
+                "iconPath": "images/movie.png",
+                "selectedIconPath": "images/movie_c.png"
+            }
+        ]
+    }
+}
